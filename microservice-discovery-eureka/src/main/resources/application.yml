@@ -1,0 +1,15 @@
+security:
+  basic:
+    enabled: true
+  user:
+    name: luowen
+    password: 666
+server:
+  port: 8761
+eureka:
+  client:
+    #不把eureka service也作为client
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
