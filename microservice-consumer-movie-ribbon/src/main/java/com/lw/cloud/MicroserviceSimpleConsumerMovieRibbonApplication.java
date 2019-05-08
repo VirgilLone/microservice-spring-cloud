@@ -13,10 +13,12 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
+//使TestConfiguration这个Configuration只作用于此RibbonClient而不是所有RibbonClient
 @RibbonClient(name = "microservice-provider-user",configuration = TestConfiguration.class)
 public class MicroserviceSimpleConsumerMovieRibbonApplication {
 
 	@Bean
+    //使RestTemplate实例有负载均衡的能力
 	@LoadBalanced
 	public RestTemplate restTemplate(){
 		return new RestTemplate();
