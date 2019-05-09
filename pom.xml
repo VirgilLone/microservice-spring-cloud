@@ -15,6 +15,7 @@
 		<module>microservice-discovery-eureka</module>
 		<module>microservice-consumer-movie-ribbon</module>
 		<module>microservice-consumer-movie-ribbon-properties-customizing</module>
+		<module>microservice-consumer-movie-ribbon-without-eureka</module>
 	</modules>
 
 	<properties>
