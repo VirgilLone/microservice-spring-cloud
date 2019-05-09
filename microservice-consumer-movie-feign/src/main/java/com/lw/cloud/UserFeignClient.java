@@ -11,6 +11,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public interface UserFeignClient {
 
     @RequestMapping(value = "/simple/{id}",method = RequestMethod.GET)
-    User findById(@PathVariable("id") Long id); // *feign在调用的时候两个坑：GetMapping组合注解不支持；@PathVariable要设置value
+    User findByIdd(@PathVariable("id") Long id); // *feign在调用的时候两个坑：GetMapping组合注解不支持；@PathVariable要设置value
 
 }

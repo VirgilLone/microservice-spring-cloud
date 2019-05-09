@@ -23,7 +23,7 @@ public class MovieController {
 
     @GetMapping( "/movie/{id}")
     public User findByIdd(@PathVariable Long id){
-        return userFeignClient.findById(id);
+        return userFeignClient.findByIdd(id);
     }
 
 }
