@@ -1,4 +1,4 @@
-package com.lw.cloud;
+package com.lw.cloud.feign;
 
 import com.lw.config.MyConfiguration;
 import com.lw.cloud.entity.User;

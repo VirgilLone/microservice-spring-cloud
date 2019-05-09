@@ -1,6 +1,6 @@
 package com.lw.cloud.controller;
 
-import com.lw.cloud.UserFeignClient;
+import com.lw.cloud.feign.UserFeignClient;
 import com.lw.cloud.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
