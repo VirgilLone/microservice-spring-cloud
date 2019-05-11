@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.feign.FeignClient;
 public interface UserFeignClient {
 
     @RequestLine("GET /simple/{id}")
-    User findByIddd(@Param("id") Long id); // *feign在调用的时候两个坑：GetMapping组合注解不支持；@PathVariable要设置value
+    User findByIddd(@Param("id") Long id);
 
 
 

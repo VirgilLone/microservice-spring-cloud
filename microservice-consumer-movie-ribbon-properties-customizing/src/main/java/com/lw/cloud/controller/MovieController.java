@@ -30,6 +30,8 @@ public class MovieController {
         ServiceInstance serviceInstance = this.loadBalancerClient.choose("microservice-provider-user");
         System.out.println("-------->" + ":" + serviceInstance.getServiceId() + ":" + serviceInstance.getHost() + ":" + serviceInstance.getPort());
 
+        // **使用RestTemplate时要获得一个List，应该使用数组接收！！
+
         // http://localhost:7900/simple/
         return this.restTemplate.getForObject("http://microservice-provider-user/simple/"+id,User.class);
     }

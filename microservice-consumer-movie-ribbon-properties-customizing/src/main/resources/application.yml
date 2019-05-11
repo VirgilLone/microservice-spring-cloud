@@ -13,6 +13,7 @@ spring:
     name: microservice-consumer-movie-ribbon-properties-customizing
 
 
+#设置请求microservice-provider-user服务的负载规则
 microservice-provider-user:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
