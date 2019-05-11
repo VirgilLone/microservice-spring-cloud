@@ -25,7 +25,7 @@ logging:
 
 
 # 解决feign第一次请求报超时500异常的方案：
-hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 3000
+hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
 # 或者：
 # hystrix.command.default.execution.timeout.enabled: false
 # 或者：
