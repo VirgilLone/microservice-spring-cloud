@@ -19,3 +19,7 @@ eureka:
   #eureka控制台的System Status信息
   environment: prd
   datacenter: cloud
+  server:
+    #关闭自我保护模式 最好不用于生产环境
+    enable-self-preservation: false
+    #eviction-interval-timer-in-ms:  清理时间 默认60*1000
