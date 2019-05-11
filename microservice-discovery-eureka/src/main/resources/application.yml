@@ -15,3 +15,6 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://luowen:666@localhost:8761/eureka
+  #eureka控制台的System Status信息
+  environment: prd
+  datacenter: cloud
