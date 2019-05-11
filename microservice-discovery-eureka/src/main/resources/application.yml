@@ -8,6 +8,7 @@ server:
   port: 8761
 eureka:
   client:
+    #开启健康检查 需要spring-boot-starter-actuator依赖
     healthcheck:
       enable: true
     #不把eureka service也作为client

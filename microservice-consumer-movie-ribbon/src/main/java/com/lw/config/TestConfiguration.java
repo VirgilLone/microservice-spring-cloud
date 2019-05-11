@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @author: luo.wen
  * @createTime: 2019/5/8
  */
-@Configuration //注解不能在@conponentScan扫的路径下
+@Configuration //注解不能在@ComponentScan扫的路径下
 //@RibbonClient(name = "microservice-provider-user",configuration = TestConfiguration.class)
 public class TestConfiguration {
 
