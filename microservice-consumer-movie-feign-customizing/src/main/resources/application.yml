@@ -29,7 +29,7 @@ hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 5000
 # 或者：
 # hystrix.command.default.execution.timeout.enabled: false
 # 或者：
-#feign.hystrix.enabled: false ## 索性禁用feign的hystrix支持
+#feign.hystrix.enabled: false ## feign全局禁用feign的hystrix支持
 
 # 超时的issue：https://github.com/spring-cloud/spring-cloud-netflix/issues/768
 # 超时的解决方案： http://stackoverflow.com/questions/27375557/hystrix-command-fails-with-timed-out-and-no-fallback-available
