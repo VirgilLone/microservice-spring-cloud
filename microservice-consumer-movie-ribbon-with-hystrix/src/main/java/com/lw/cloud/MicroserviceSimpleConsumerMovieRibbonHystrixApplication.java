@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableCircuitBreaker
-public class MicroserviceSimpleConsumerMovieRibbonApplication {
+public class MicroserviceSimpleConsumerMovieRibbonHystrixApplication {
 
 	@Bean
     //使RestTemplate实例有负载均衡的能力
@@ -21,6 +21,6 @@ public class MicroserviceSimpleConsumerMovieRibbonApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroserviceSimpleConsumerMovieRibbonApplication.class, args);
+		SpringApplication.run(MicroserviceSimpleConsumerMovieRibbonHystrixApplication.class, args);
 	}
 }
