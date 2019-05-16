@@ -10,10 +10,10 @@ import org.springframework.cloud.netflix.feign.EnableFeignClients;
 @EnableEurekaClient
 @EnableFeignClients
 @EnableCircuitBreaker
-public class MicroserviceSimpleConsumerMovieFeignHystrixApplication {
+public class MicroserviceSimpleConsumerMovieFeignHystrixFallbackApplication {
 
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroserviceSimpleConsumerMovieFeignHystrixApplication.class, args);
+		SpringApplication.run(MicroserviceSimpleConsumerMovieFeignHystrixFallbackApplication.class, args);
 	}
 }
