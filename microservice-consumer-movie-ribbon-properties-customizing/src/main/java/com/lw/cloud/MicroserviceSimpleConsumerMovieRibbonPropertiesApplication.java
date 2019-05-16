@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableEurekaClient
-public class MicroserviceSimpleConsumerMovieRibbonApplication {
+public class MicroserviceSimpleConsumerMovieRibbonPropertiesApplication {
 
 	@Bean
     //使RestTemplate实例有负载均衡的能力
@@ -19,6 +19,6 @@ public class MicroserviceSimpleConsumerMovieRibbonApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroserviceSimpleConsumerMovieRibbonApplication.class, args);
+		SpringApplication.run(MicroserviceSimpleConsumerMovieRibbonPropertiesApplication.class, args);
 	}
 }
