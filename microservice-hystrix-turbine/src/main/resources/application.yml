@@ -14,5 +14,7 @@ spring:
 
 turbine:
   aggregator:
-    clusterConfig: MICROSERVICE-CONSUMER-MOVER-RIBBON-WITH-HYSTRIX
-  app-config: microservice-consumer-mover-ribbon-with-hystrix
+    clusterConfig: default
+  #spring.application.name 配置要监控的集群，可逗号隔开
+  app-config: microservice-consumer-mover-ribbon-with-hystrix,microservice-consumer-movie-feign-with-hystrix
+  cluster-name-expression: new String("default")
