@@ -1,0 +1,18 @@
+server:
+  port: 8031
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://luowen:666@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+spring:
+  application:
+    name: microservice-hystrix-turbine
+
+turbine:
+  aggregator:
+    clusterConfig: MICROSERVICE-CONSUMER-MOVER-RIBBON-WITH-HYSTRIX
+  app-config: microservice-consumer-mover-ribbon-with-hystrix
