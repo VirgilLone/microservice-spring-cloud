@@ -14,6 +14,6 @@ spring:
 
 
 
-microservice-provider-user:
+microservice-provider-user: #ribbon要请求的服务的serviceId
   ribbon:
     listOfServers: localhost:8900
