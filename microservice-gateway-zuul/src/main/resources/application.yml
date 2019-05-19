@@ -13,3 +13,9 @@ eureka:
 spring:
   application:
     name: microservice-gateway-zuul
+zuul:
+  #禁用代理所有服务
+  ignored-services:  '*'
+  #只代理所配置的服务，并启用别名
+  routes:
+    microservice-provider-user: /user/**
