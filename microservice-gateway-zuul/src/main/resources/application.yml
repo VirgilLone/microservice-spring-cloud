@@ -20,6 +20,7 @@ zuul:
   routes:
     microservice-provider-user: /user/**
     microservice-consumer-mover-ribbon-with-hystrix: /ribbon/**
+    microservice-sidecar: /sidecar/**
 
 
 #zuul:

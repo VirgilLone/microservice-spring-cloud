@@ -1,0 +1,20 @@
+
+server:
+  port: 8070
+eureka:
+  client:
+    service-url:
+      defaultZone: http://luowen:666@localhost:8761/eureka
+  #eureka控制台的System Status信息
+  environment: prd
+  datacenter: cloud
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+spring:
+  application:
+    name: microservice-sidecar
+
+sidecar:
+  port: 8060
+  health-uri: http://localhost:8060/health.json
