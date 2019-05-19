@@ -25,6 +25,7 @@
 		<module>microservice-consumer-movie-feign-with-hystrix-fallbackfactory</module>
 		<module>microservice-hystrix-dashboard</module>
 		<module>microservice-hystrix-turbine</module>
+		<module>microservice-gateway-zuul</module>
 	</modules>
 
 	<properties>
