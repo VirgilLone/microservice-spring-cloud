@@ -1,0 +1,48 @@
+server:
+  port: 8040
+eureka:
+  client:
+    service-url:
+      defaultZone: http://luowen:666@localhost:8761/eureka
+  #eureka控制台的System Status信息
+  environment: prd
+  datacenter: cloud
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${server.port}
+spring:
+  application:
+    name: microservice-gateway-zuul-filter
+zuul:
+  #禁用代理所有服务
+  ignored-services:  '*'
+  #只代理所配置的服务，并启用别名
+  routes:
+    microservice-provider-user: /user/**
+    microservice-consumer-mover-ribbon-with-hystrix: /ribbon/**
+    microservice-sidecar: /sidecar/**
+
+
+#zuul:
+#  routes:
+#    abc:
+#      path: /user/**
+#      serviceId: microservice-provider-user
+
+
+#zuul:
+#  routes:
+#    abc:
+#      path: /user/**
+#      #不会作为hystrixCommand执行，也不能使用ribbon来负载均衡
+#      url: http://192.168.1.106:7900
+##若要使用负载均衡，需使用以下配置：
+#ribbon:
+#  eureka:
+#    #禁用掉eureka中ribbon的支持
+#    enabled: false
+#microservice-provider-user:
+#  ribbon:
+#    #配置microservice-provider-user服务的负载url地址
+#    listOfServers: localhost:7900,localhost:8900
+

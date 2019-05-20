@@ -29,6 +29,7 @@
 		<module>microservice-gateway-zuul-reg-exp</module>
 		<module>microservice-gateway-zuul-fallback</module>
 		<module>microservice-sidecar</module>
+		<module>microservice-gateway-zuul-filter</module>
 	</modules>
 
 	<properties>
