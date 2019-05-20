@@ -1,0 +1,8 @@
+server:
+  port: 8083
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/VirgilLone/spring-cloud-config-repository
