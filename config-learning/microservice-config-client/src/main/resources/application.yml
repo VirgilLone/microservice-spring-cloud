@@ -1,0 +1,7 @@
+server:
+  port: 8084
+
+#传统玩法，配置写在本项目的配置文件中去读取
+#profile: aabbcc
+
+

@@ -3,8 +3,8 @@ server:
 
 #获取git上的资源信息遵循如下规则
 #/{application}/{profile}[/{label}]
-#/{application}-{profile}.yml
-#/{label}/{application}-{profile}.yml
+#/{application}-{profile}.yml     http://localhost:8083/foobar-xxx.yml访问
+#/{label}/{application}-{profile}.yml     http://localhost:8083/master/foobar-xxx.yml访问
 #/{application}-{profile}.properties
 #/{label}/{application}-{profile}.properties
 spring:
