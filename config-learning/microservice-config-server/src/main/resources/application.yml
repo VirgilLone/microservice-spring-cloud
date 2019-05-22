@@ -21,8 +21,11 @@ spring:
       server:
         git:
           uri: https://gitee.com/lw233/spring-cloud-config-repository      # 默认仓库
-          repos:
-            simple: https://gitee.com/lw233/simple
-            special:
-              pattern: special*/dev*,special*/test*
-              uri: https://gitee.com/lw233/special
+#          repos:
+#            simple: https://gitee.com/lw233/simple
+#            special:
+#              pattern: special*/dev*,special*/test*
+#              uri: https://gitee.com/lw233/special
+          search-paths:
+            - foo #默认仓库下的foo目录
+            - bar #默认仓库下的bar目录
