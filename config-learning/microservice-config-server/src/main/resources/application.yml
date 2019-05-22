@@ -7,10 +7,22 @@ server:
 #/{label}/{application}-{profile}.yml     http://localhost:8083/master/foobar-xxx.yml访问
 #/{application}-{profile}.properties
 #/{label}/{application}-{profile}.properties
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://gitee.com/lw233/spring-cloud-config-repository #基础使用
+#          uri: https://gitee.com/lw233/{application}  #通配符  一个配置仓库对应一个微服务（***推荐使用）
+
 spring:
   cloud:
     config:
       server:
         git:
-          #uri: https://gitee.com/lw233/spring-cloud-config-repository #基础使用
-          uri: https://gitee.com/lw233/{application}  #通配符  一个配置仓库对应一个微服务
+          uri: https://gitee.com/lw233/spring-cloud-config-repository      # 默认仓库
+          repos:
+            simple: https://gitee.com/lw233/simple
+            special:
+              pattern: special*/dev*,special*/test*
+              uri: https://gitee.com/lw233/special
