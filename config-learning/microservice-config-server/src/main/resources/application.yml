@@ -12,4 +12,4 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/VirgilLone/spring-cloud-config-repository
+          uri: https://gitee.com/lw233/spring-cloud-config-repository
