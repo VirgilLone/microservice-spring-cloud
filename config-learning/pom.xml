@@ -11,6 +11,7 @@
 	<modules>
 		<module>microservice-config-server</module>
 		<module>microservice-config-client</module>
+		<module>microservice-config-server-encrypt</module>
 	</modules>
 
 	<properties>

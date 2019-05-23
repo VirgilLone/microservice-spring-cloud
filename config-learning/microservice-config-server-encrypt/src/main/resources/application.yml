@@ -1,0 +1,25 @@
+server:
+  port: 8083
+
+#获取git上的资源信息遵循如下规则
+#/{application}/{profile}[/{label}]
+#/{application}-{profile}.yml     http://localhost:8083/foobar-xxx.yml访问
+#/{label}/{application}-{profile}.yml     http://localhost:8083/master/foobar-xxx.yml访问
+#/{application}-{profile}.properties
+#/{label}/{application}-{profile}.properties
+#spring:
+#  cloud:
+#    config:
+#      server:
+#        git:
+#          uri: https://gitee.com/lw233/spring-cloud-config-repository #基础使用
+#          uri: https://gitee.com/lw233/{application}  #通配符  一个配置仓库对应一个微服务（***推荐使用）
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/lw233/spring-cloud-config-repository      # 默认仓库
+encrypt:
+  key: foo
